@@ -132,7 +132,7 @@ ABC分类法基于帕累托法则（80/20法则），对商品进行分类管理
 
 ```bash
 # 克隆项目
-git clone https://github.com/yourusername/product-analysis-tool.git
+git clone https://github.com/a1103364300-oss/product-analysis-tool.git
 
 # 进入项目目录
 cd product-analysis-tool
