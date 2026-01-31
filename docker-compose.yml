@@ -10,7 +10,7 @@ services:
       dockerfile: docker/Dockerfile
     container_name: product-analysis-tool
     ports:
-      - "8080:80"
+      - "10875:80"
     volumes:
       # 挂载数据目录（用于持久化上传的文件和分析结果）
       - ./data:/data
