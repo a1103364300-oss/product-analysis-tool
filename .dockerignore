@@ -1,0 +1,58 @@
+# Docker构建忽略规则
+
+# Git忽略规则
+.git
+.gitignore
+
+# IDE配置
+.vscode
+.idea
+*.swp
+*.swo
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# 日志和临时文件
+*.log
+npm-debug.log*
+.temp/
+tmp/
+
+# 文档目录（不包含在镜像中）
+docs/
+examples/
+
+# 脚本文件
+scripts/
+
+# 测试文件
+*.test.js
+*.spec.js
+__tests__/
+
+# 配置文件（敏感信息）
+.env
+.env.local
+*.pem
+*.key
+
+# 构建输出
+dist/
+build/
+coverage/
+
+# Node.js相关
+node_modules/
+npm-debug.log
+
+# 其他不需要的文件
+*.md
+!README.md
+!LICENSE
+!CHANGELOG.md
+
+# Docker相关
+.docker/
+docker-compose.override.yml
