@@ -354,10 +354,10 @@ docker-compose --version
    ```bash
    # 启动容器（后台运行）
    docker-compose up -d
-
+   
    # 查看容器状态
    docker-compose ps
-
+   
    # 查看日志
    docker-compose logs -f
    ```
