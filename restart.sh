@@ -1,8 +1,7 @@
-#!/bin/bash
+#!/bin/sh
 
-set -e  # 遇到错误立即退出
-
-PROJECT_DIR=" $ (cd " $ (dirname " $ {BASH_SOURCE[0]}")" && pwd)"
+# 设置变量
+PROJECT_DIR= $ (cd " $ (dirname " $ 0")" && pwd)
 CONTAINER_NAME="product-analysis-tool"
 IMAGE_NAME="product-analysis-tool-product-analysis"
 PORT_HOST=10875
@@ -15,7 +14,7 @@ echo "📥 拉取最新代码..."
 cd " $ PROJECT_DIR"
 git pull origin main || git pull origin master
 
-# 2. 停止并删除旧容器（如果存在）
+# 2. 停止并删除旧容器
 echo "⏹️  停止旧容器..."
 if docker ps -a --format '{{.Names}}' | grep -q "^ $ {CONTAINER_NAME} $ "; then
     docker stop " $ CONTAINER_NAME" >/dev/null 2>&1
@@ -38,6 +37,6 @@ docker run -d \
 
 echo "✅ 服务已重启！访问地址：http://localhost: $ PORT_HOST"
 
-# 5. 显示最近日志（方便排查）
+# 5. 显示最近日志
 echo "📄 最近 10 行日志："
 docker logs --tail 10 " $ CONTAINER_NAME"
