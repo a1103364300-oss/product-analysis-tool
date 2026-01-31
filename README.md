@@ -548,7 +548,7 @@ MIT许可证是一种非常宽松的开源许可证，允许您：
 
 ## 📧 联系方式
 
-- **项目维护者**：Mtroll
+- **项目维护者**：Metrotopeace
 - **GitHub**：https://github.com/a1103364300-oss/product-analysis-tool
 - **问题反馈**：https://github.com/a1103364300-oss/product-analysis-tool/issues
 
